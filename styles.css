@@ -1,0 +1,288 @@
+body {
+  margin: 0;
+  font-family: "Orbitron", sans-serif;
+  background-color: #0d0d0d;
+  color: #fff;
+}
+
+header {
+  background-color: #1a1a1a;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #e10600;
+}
+
+header h1 {
+  margin: 0;
+  padding: 0;
+  color: #e10600;
+  font-size: 1.8rem;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #e10600;
+}
+
+.container {
+  padding: 2rem;
+}
+
+body {
+  font-family: "Orbitron", sans-serif;
+  background-color: #0d0d0d;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #e10600;
+}
+
+nav a:hover {
+  color: #e10600 !important;
+}
+
+.intro-text {
+  max-width: 90%;
+  border-radius: 10px;
+}
+
+#TEXTOVERMELHO {
+  color: #e10600;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  border-color: #e10600 !important;
+  transition: transform 0.3s ease;
+}
+
+.card-item {
+  transition: all 0.3s ease;
+}
+
+.card-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(225, 6, 0, 0.3);
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+.btn-outline-danger {
+  border-color: #e10600;
+  color: #e10600;
+}
+
+.btn-outline-danger:hover {
+  background-color: #e10600;
+  border-color: #e10600;
+  color: #fff;
+}
+
+.lead {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.text-info {
+  color: #17a2b8 !important;
+}
+
+.text-warning {
+  color: #ffc107 !important;
+}
+
+/* ========== ESTILOS PARA O CARROSSEL INTEGRADO NO ITEM EM DESTAQUE ========== */
+.destaque-carrossel-container {
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  background: #1a1a1a;
+}
+
+.destaque-carrossel-imagens {
+  position: relative;
+  height: 400px;
+  width: 100%;
+}
+
+.destaque-carrossel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.destaque-carrossel-item.ativo {
+  opacity: 1;
+}
+
+.btn-carrossel {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border: 2px solid #fff;
+  z-index: 10;
+  background-color: rgba(225, 6, 0, 0.8);
+}
+
+.btn-carrossel:hover {
+  opacity: 1 !important;
+  transform: scale(1.1);
+  background-color: #e10600;
+}
+
+.indicador {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #6c757d;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.indicador:hover {
+  transform: scale(1.2);
+  background-color: #e10600 !important;
+}
+
+.indicador.ativo {
+  background-color: #e10600 !important;
+  transform: scale(1.1);
+}
+
+/* Garantir que as imagens do carrossel tenham transição suave */
+.destaque-carrossel-container img {
+  transition: opacity 0.3s ease;
+}
+
+/* ========== ESTILOS PARA AS IMAGENS ADICIONAIS NA PÁGINA DE DETALHES ========== */
+.imagem-adicional {
+  height: 250px;
+  object-fit: cover;
+  border: 2px solid #333;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.imagem-adicional:hover {
+  border-color: #e10600;
+  transform: scale(1.02);
+}
+
+/* Para os cards da página inicial */
+.card-img-top {
+  height: 200px;
+  object-fit: contain;
+  background-color: #1a1a1a;
+  padding: 10px;
+}
+
+/* Para o card em destaque - SEM BORDA AMARELA */
+.card-destaque {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+}
+
+.card-destaque .card-img-top {
+  height: 300px;
+  object-fit: contain;
+  background-color: #1a1a1a;
+  padding: 15px;
+}
+
+/* Para o carrossel na página de detalhes */
+.carrossel-container img {
+  max-height: 400px;
+  object-fit: contain;
+  background-color: #1a1a1a;
+  padding: 15px;
+  width: 100%;
+}
+
+/* ========== ESTILOS ESPECÍFICOS PARA O CARD DE DESTAQUE COM CARROSSEL ========== */
+.destaque-com-carrossel {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.destaque-info {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+}
+
+.btn-destaque {
+  background: linear-gradient(45deg, #e10600, #ff6b6b);
+  border: none;
+  font-weight: bold;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-destaque:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(225, 6, 0, 0.4);
+  background: linear-gradient(45deg, #ff6b6b, #e10600);
+}
+
+/* Estilo para o link do logo no header */
+header a:hover h1 {
+  color: #ff6b6b !important;
+  transition: color 0.3s ease;
+}
+
+header a:hover img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+/* ========== ESTILOS PARA O DASHBOARD ========== */
+.dashboard-card {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  border: 2px solid #333;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  border-color: #e10600;
+  box-shadow: 0 10px 25px rgba(225, 6, 0, 0.3);
+}
+
+.card-header {
+  border-bottom: 2px solid #333;
+  font-family: "Orbitron", sans-serif;
+}
+
+/* Estilos para os cards de resumo */
+.bg-danger,
+.bg-warning,
+.bg-info,
+.bg-success {
+  transition: all 0.3s ease;
+}
+
+.bg-danger:hover,
+.bg-warning:hover,
+.bg-info:hover,
+.bg-success:hover {
+  transform: scale(1.05);
+}
